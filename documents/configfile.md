@@ -1,6 +1,6 @@
 # Configuration file
 
-Write juri's configuration file in toml.  
+juri's configuration file is written in toml.  
 The location is
 
 ```
@@ -14,222 +14,256 @@ You can use the example in ../example/jurirc.toml
 ### Standard table
 Color theme (String)
 ```"vivid"``` or ```"dark"``` or ```"light"``` or ```"vscode"```  
-default is ```"dark"```.
+The default is ```"dark"```.
+
 ```
 theme
 ```
 
-Note: ```"vscode"``` is you can use current VSCode/VSCodium theme.
+Note: ```"vscode"```  uses the current VSCode/VSCodium theme, if VSCode/VSCodium is installed.
 
 Display line numbers (bool)  
-default is true
+The default is true.
+
 ```
 number
 ```
 
 Display status line (bool)  
-default is true
+The default is true.
+
 ```
 statusLine
 ```
 
 Enable syntax highlighting (bool)  
-default is true
+The default is true.
+
 ```
 syntax
 ```
 
 Enable/Disable indentation lines (bool)  
-default is true
+The default is true.
+
 ```
 indentationLines
 ```
 
 Set tab width (Integer)  
-default is 2
+The default is 2.
+
 ```
 tabStop
 ```
 
 Enable/Disable ignorecase (bool)  
-default is true
+The default is true.
+
 ```
 ignorecase
 ```
 
 Enable/Disable smartcase (bool)  
-default is true
+The default is true.
+
 ```
 smartcase
 ```
 
 Automatic closing brackets (bool)  
-default is true
+The default is true
 ```
 autoCloseParen
 ```
 
 Automatic indentation (bool)  
-default is true
+The default is true.
+
 ```
 autoIndent
 ```
 
 Disable change of the cursor shape (bool)  
-default is false
+The default is false.
+
 ```
 disableChangeCursor
 ```
 
 Set cursor shape of the terminal emulator you are using (String) ```"blinkBlock"``` or ```"blinkIbeam"``` or ```noneBlinkBlock``` or ```noneBlinkIbeam```  
-default is ```"blinkBlock"```
+The default is ```"blinkBlock"```.
+
 ```
-defaultCursor
+The defaultCursor
 ```
 
 Set cursor shape in normal mode (String) ```"blinkBlock"``` or ```"blinkIbeam"``` or ```noneBlinkBlock``` or ```noneBlinkIbeam```  
-default is ```"blinkBlock"```
+The default is ```"blinkBlock"```.
+
 ```
 normalModeCursor
 ```
 
 Set cursor shape in insert mode (String) ```"blinkBlock"``` or ```"blinkIbeam"``` or ```noneBlinkBlock``` or ```noneBlinkIbeam```  
-default is ```"blinkIbeam"```
+The default is ```"blinkIbeam"```.
 
 ```
 insertModeCursor
 ```
 
 Auto save (bool)  
-default is false
+The default is false.
+
 ```
 autoSave
 ```
 
-Auto save interval (minits) (int)  
-default is 5 (5 minits)
+Auto save interval (minutes) (int)  
+The default is 5 (5 minutes).
+
 ```
 autoSaveInterval
 ```
 
 Live reload of configuration file (bool)  
-default is false
+The default is false.
+
 ```
 liveReloadOfConf
 ```
 
 Incremental search (bool)  
-default is true
+The default is true.
+
 ```
 incrementalSearch
 ```
 
 Pop-up window in ex mode (bool)  
-default is true
+The default is true.
+
 ```
 popUpWindowInExmode 
 ```
 
 Auto delete paren (bool)  
-default is true
+The default is true.
+
 ```
 autoDeleteParen
 ```
 
 Smooth scroll (bool)  
-default is true
+The default is true.
+
 ```
 smoothScroll
 ```
 
 Smooth scroll speed (int)  
-default is 15
+The default is 15.
+
 ```
 smoothScrollSpeed
 ```
 
 System clipboard (bool)  
-default is true
+The default is true.
+
 ```
 systemClipboard
 ```
 
 ### TabLine table
-Show all bufer in tab line (bool)  
-default is false  
+Show all buffer in tab line (bool)  
+The default is false.  
+
 ```
 allBuffer
 ```
 
 ### StatusLine table
 Multiple status line (bool)  
-default is true
+The default is true.
+
 ```
 multipleStatusLine
 ```
 
 Enable/Disable merging status line with command line (bool)  
-default is true
+The default is true.
+
 ```
 merge
 ```
 
 Show current mode (bool)  
-default is true
+The default is true.
+
 ```
 mode
 ```
 
 Show edit history mark (bool)  
-default is true
+The default is true.
+
 ```
 chanedMark
 ```
 
 Show line info (bool)  
-default is true
+The default is true.
+
 ```
 line
 ```
 
 Show column info (bool)  
-default is ture
+The default is true.
+
 ```
 column
 ```
 
 Show character encoding (bool)  
-default is true
+The default is true.
+
 ```
 encoding
 ```
 
 Show language (bool)  
-default is true
+The default is true.
+
 ```
 language
 ```
 
 Show file location (bool)  
-default is true
+The default is true.
+
 ```
 directory
 ```
 
 Show current git branch name (bool)  
-default is true
+The default is true.
+
 ```
 gitbranchName
 ```
 
 Show/Hide git branch name in status line when window is inactive (bool)  
-default is false
+The default is false.
+
 ```
 showGitInactive
 ```
 
 Show/Hide mode string in status line when window is inactive (bool)  
-default is false
+The default is false.
+
 ```
 showModeInactive
 ```
@@ -237,7 +271,8 @@ showModeInactive
 ### BuildOnSave table
 
 Enable/Disable build on save (bool)  
-default is false
+The default is false.
+
 ```
 buildOnSave
 ```
@@ -255,7 +290,8 @@ command
 ### WorkSpace table
 
 Enable/Disable workspace bar (bool)  
-default is false
+The default is false.
+
 ```
 workSpaceLine
 ```
@@ -263,15 +299,16 @@ workSpaceLine
 ### Highlight table
 
 Highlight the current line (bool)  
-defaut is false
+The default is false.
+
 ```
 currentLine
-
 ```
 
 Highlight any word (array)  
 
-defaut
+The default is true.
+
 ```
 ["TODO", "WIP", "NOTE"]
 ```
@@ -280,66 +317,75 @@ reservedWord
 ```
 
 Highlight replacement text (bool)  
-default is true
+The default is true.
+
 ```
 replaceText
 ```
 
-Highlight a pair of paren (bool)  
-default is true
+Highlight a pair of parentheses (bool)  
+The default is true.
+
 ```
 pairOfParen
 ```
 
 Highlight full-width space (bool)  
-default is true
+The default is true.
+
 ```
 fullWidthSpace
 ```
 
 Highlight trailing spaces (bool)  
-default is true
+The default is true.
+
 ```
 trailingSpaces
 ```
 
-highlight other uses of the current word under the cursor (bool)  
-default is true
+Highlight other uses of the current word under the cursor (bool)  
+The default is true.
+
 ```
 currentWord
 ```
 
-### AutoBackup table
+### Auto Backup table
 
 Enable/Disable automatic backups (bool)  
-default is ture  
+The default is true.  
+
 ```
 enable
 ```
 
 Start backup when there is no operation for the set number of seconds (int)  
-default is 10 (10 second)  
+The default is 10. (10 seconds.)  
+
 ```
 idleTime
 ```
 
 Backup interval (int)  
-default is 5 (5 minute)    
+The default is 5. (5 minutes.)    
+
 ```
 interval
 ```
 
 Directory to save backup files (string)  
 
-If not set, it will be saved in .hisotry in the same directory as the original file.  
+If not set, it will be saved in .history in the same directory as the original file.  
 
-default is "" (None)  
+The default is "". (None)  
 ```
 backupDir
 ```
 
 Exclude settings for where you don't want to produce automatic backups (array)  
-default
+The default is "/etc".
+
 ```
 ["/etc"]
 ```
@@ -350,56 +396,58 @@ dirToExclude
 
 ### QuickRun table
 
-Save buffer when run QuickRun (bool)  
-default is true
+Save buffer when running QuickRun (bool)  
+The default is true.
+
 ```
 saveBufferWhenQuickRun
 ```
 
-Setting commands to be executed by quick run (string)  
-default is "" (None)
+Setting commands to be executed by QuickRun (string)  
+The default is "" (None)
+
 ```
 command
 ```
 
 Command timeout (int)  
-default is 30 (30 second)
+The default is 30 (30 second)
 ```
 timeout
 ```
 
 Nim compiler advanced command setting (string)  
-default is "c"
+The default is "c"
 ```
 nimAdvancedCommand
 ```
 
 gcc compileer option setting (string)  
-default is "" (None)
+The default is "" (None)
 ```
 ClangOptions
 ```
 
 g++ compiler option setting (string)  
-default is "" (None)
+The default is "" (None)
 ```
 CppOptions
 ```
 
 Nim compiler option setting (string)  
-default is "" (None)
+The default is "" (None)
 ```
 NimOptions
 ```
 
 sh option setting (string)  
-default is "" (None)
+The default is "" (None)
 ```
 shOptions
 ```
 
 bash option setting (string)  
-default is "" (None)
+The default is "" (None)
 ```
 bashOptions
 ```
@@ -407,133 +455,133 @@ bashOptions
 ### Notification table
 
 Enable/disable all messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 screenNotifications
 ```
 
 Enable/disable all messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 logNotifications
 ```
 
 Enable/disable auto backups messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 autoBackupScreenNotify
 ```
 
 Enable/disable auto backups messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 autoBackupLogNotify
 ```
 
 Enable/disable auto save messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 autoSaveScreenNotify
 ```
 
 Enable/disable auto save messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 autoSaveLogNotify
 ```
 
 Enable/disable yank messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 yankScreenNotify
 ```
 
 Enable/disable yank messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 yankLogNotify
 ```
 
 Enable/disable delete buffer messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 deleteScreenNotify
 ```
 
 Enable/disable delete buffer messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 deleteLogNotify
 ```
 
 Enable/disable save messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 saveScreenNotify
 ```
 
 Enable/disable save messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 saveLogNotify
 ```
 
 Enable/disable workspace (create, delete, etc...) messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 workspaceScreenNotify
 ```
 
 Enable/disable workspace (create, delete, etc...) messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 workspaceLogNotify
 ```
 
 Enable/disable QuickRun messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 quickRunScreenNotify
 ```
 
 Enable/disable QuickRun messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 quickRunLogNotify
 ```
 
 Enable/disable build on save messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 buildOnSaveScreenNotify
 ```
 
 Enable/disable build on save messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 buildOnSaveLogNotify
 ```
 
 Enable/disable filer messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 filerScreenNotify
 ```
 
 Enable/disable filer messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 filerLogNotify
 ```
 
 Enable/disable restore messages/notifications in status line (bool)  
-default is true
+The default is true
 ```
 restoreScreenNotify
 ```
 
 Enable/disable restore messages/notifications in log (bool)  
-default is true
+The default is true
 ```
 restoreLogNotify
 ```
@@ -541,7 +589,7 @@ restoreLogNotify
 ### Filer table
 
 Show/hidden unicode icons (bool)  
-default is true
+The default is true
 ```
 showIcons
 ```
@@ -724,7 +772,7 @@ bufferLen
 ### Color and theme
 -- Available colors --
 
-default  
+The default  
 black  
 maroon  
 green  
@@ -1261,9 +1309,9 @@ Background color selected in visual mode
 visualModeBg
 ```
 
-Default text color
+The default text color
 ```
-defaultCharactorColor
+The defaultCharactorColor
 ```
 
 Syntax highlighting color

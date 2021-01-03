@@ -1,8 +1,8 @@
 # Overview
 
-juri adopts the mode and keybinding like vi/vim.
-You can easily adapt if you have used vi/vim.
-Currently you can use normal mode, visual mode, replace mode, insert mode, ex mode, filer mode.
+juri adopts the modes and keybindings of vi/vim.
+You can easily adapt if you have used vi/vim before.
+Currently you can use normal mode, visual mode, replace mode, insert mode, ex mode, and filer mode.
 
 # Install and compile
 
